@@ -13,37 +13,51 @@ var css1 = `/*
 
 /*换一个背景颜色吧*/
 html{
-  background: rgb(222,222,222);
+  background:  #D5E6FB;
 }
-#code-wrapper{
-  width: 49%; 
-  left: 0;
-  position: fixed;
-  height: 100%;
-}
+
 
 /* 我需要一点代码高亮 */
 
-.token.selector{ color: #06fac2;}
-.token.property{ color: blue;}
-.token.function{ color: blue;}
+.token.selector{ color: #FF5A8C ;}
+.token.property{ color: #5C02DC ;}
+
 
 /* 编辑器太丑了,调整一下编辑器 */
+#code-wrapper{
+  display: flex;
+  height: 97%;
+  width: 49%; 
+  left: 0;
+  border: 8px solid #444;
+  position: fixed;
+  color: black;
+  margin: 16px ;
+}
 #code{
   width: 100%;
-  border: 8px solid #444;
-  padding: 16px;
   overflow: auto;
   background: white;
-  font-size:16px;
+  padding: 16px;
 }
  
 
 /* 现在正式开始 */
 /* 我需要一张白纸 */
 
+#paper{
+  background: #444;
+  padding: 8px;
+  position: fixed;
+  width: 49%;
+  height: 97%;
+  right: 0;
+  display: flex;
+  align-items: flex-start;
+  margin: 16px;
+}
 #paper > .content {
- display: block;
+ display:block;
 }
 
 /* 于是我就可以在白纸上写字了，请看右边 */
