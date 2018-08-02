@@ -69,9 +69,11 @@ var md = `
 
 # 项目介绍
 
-- 1. [轮播](https://fatfanfan.github.io/apple/index.html)
-- 2. [简历](https://fatfanfan.github.io/resume/index.html)
-- 3. [导航](https://fatfanfan.github.io/KBD/1.html)
+- [轮播](https://fatfanfan.github.io/apple/index.html)
+
+- [简历](https://fatfanfan.github.io/resume/index.html)
+
+- [导航](https://fatfanfan.github.io/KBD/1.html)
 
 # 联系方式
 
@@ -79,9 +81,9 @@ var md = `
 - Email 1737574999@qq.com
 - 手机 xxxxxxx
 
-# 博客
-- [简书](https://www.jianshu.com/u/21ccc68041d0)
+# 博客地址
 
+- [简书](https://www.jianshu.com/u/21ccc68041d0)
 
 - [Github](https://github.com/fatfanfan)
 
