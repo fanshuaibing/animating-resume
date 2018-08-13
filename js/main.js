@@ -49,7 +49,7 @@ html{
   background: #444;
   padding: 8px;
   position: fixed;
-  width: 49%;
+  width: 49%
   height: 97%;
   right: 0;
   display: flex;
@@ -83,11 +83,12 @@ var md = `
 
 # 项目介绍
 
-- [轮播](https://fatfanfan.github.io/apple/index.html)
-
 - [简历](https://fatfanfan.github.io/resume/index.html)
 
+- [皮卡丘](https://fatfanfan.github.io/apple/index.html)
+
 - [导航](https://fatfanfan.github.io/KBD/1.html)
+
 
 # 联系方式
 
@@ -144,12 +145,22 @@ function writeCss(prefix, code, fn){
 		}
 	}, 50)
 }
+
+function createPaper(fn){
+	var paper = document.createElement('div')
+	paper.id = 'paper'
+	var content = document.createElement('pre')
+	content.className = 'content'
+	paper.appendChild(content)
+	document.body.appendChild(paper)
+	fn && fn.call()
+}
 function writeMarkdown(markdown, fn){
-	let domPaper = document.querySelector('#paper>.content')
+	let domPaper = document.querySelector('#paper>.content')//获取pre标签
 	let n = 0
 	let id = setInterval(() => {
 		n += 1
-		domPaper.innerHTML = markdown.substring(0, n)
+		domPaper.innerHTML = markdown.substring(0, n)//给pre标签添加内容
 		domPaper.scrollTop = domPaper.scrollHeight
 		if (n >= markdown.length) {
 			window.clearInterval(id)
@@ -157,25 +168,16 @@ function writeMarkdown(markdown, fn){
 		}
 	}, 50)
 }
-
-
-
-function createPaper(fn){
-  var paper = document.createElement('div') 
-  paper.id = 'paper'
-  var content = document.createElement('pre')
-  content.className = 'content'
-  paper.appendChild(content)
-  document.body.appendChild(paper)
-  fn && fn.call()
-}
-
 function convertMarkdownToHtml(fn){
-  var div = document.createElement('div')  
-  div.className = 'html markdown-body'
-  div.innerHTML = marked(md)
-  let markdownContainer = document.querySelector('#paper > .content')
-  markdownContainer.replaceWith(div)
-  fn && fn.call()
+	var div = document.createElement('div')    //创建标签
+	div.className = 'html markdown-body'
+	div.innerHTML = marked(md)                 //html格式的paper
+	let markdownContainer = document.querySelector('#paper > .content')   // 获取pre标签
+	markdownContainer.replaceWith(div)       //替换pre标签
+	fn && fn.call()
 }
+
+
+
+
 
