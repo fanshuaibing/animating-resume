@@ -47,6 +47,7 @@ html{
 
 #paper{  
   position: absolute;
+  background: white ;
   height: 97%;
   width: 49%; 
   right: 0;
@@ -142,7 +143,7 @@ function writeCss(prefix, code, fn){
 			window.clearInterval(id)
 			fn && fn.call()
 		}
-	}, 0)
+	}, 50)
 }
 
 function createPaper(fn){
@@ -165,7 +166,7 @@ function writeMarkdown(markdown, fn){
 			window.clearInterval(id)
 			fn && fn.call()
 		}
-	}, 0)
+	}, 50)
 }
 function convertMarkdownToHtml(fn){
 	var div = document.createElement('div')    //创建标签
