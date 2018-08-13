@@ -4,6 +4,7 @@
 
 body{
   height: 100vh;
+  position: relative;
 }
 .token.selector{
   color: black;
@@ -21,7 +22,7 @@ body{
   width: 100%;
   height: 100%;
   padding-left: 16px;
-  display: ;
+  display: block;
   overflow: hidden;
   background: white;
 }

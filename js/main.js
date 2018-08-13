@@ -24,13 +24,13 @@ html{
 
 
 /* 编辑器太丑了,调整一下编辑器 */
-#code-wrapper{
-  display: flex;
+#code-wrapper{ 
+  position: absolute;
   height: 97%;
   width: 49%; 
   left: 0;
   border: 8px solid #444;
-  position: fixed;
+  display:flex;
   color: black;
   margin: 16px ;
 }
@@ -45,16 +45,15 @@ html{
 /* 现在正式开始 */
 /* 我需要一张白纸 */
 
-#paper{
-  background: #444;
-  padding: 8px;
-  position: fixed;
-  width: 49%
+#paper{  
+  position: absolute;
   height: 97%;
+  width: 49%; 
   right: 0;
+  border: 8px solid #444;
   display: flex;
-  align-items: flex-start;
-  margin: 16px;
+  color: black;
+  margin: 16px ;
 }
 #paper > .content {
  display:block;
@@ -143,7 +142,7 @@ function writeCss(prefix, code, fn){
 			window.clearInterval(id)
 			fn && fn.call()
 		}
-	}, 50)
+	}, 0)
 }
 
 function createPaper(fn){
@@ -166,7 +165,7 @@ function writeMarkdown(markdown, fn){
 			window.clearInterval(id)
 			fn && fn.call()
 		}
-	}, 50)
+	}, 0)
 }
 function convertMarkdownToHtml(fn){
 	var div = document.createElement('div')    //创建标签
