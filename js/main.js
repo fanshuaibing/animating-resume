@@ -1,6 +1,7 @@
 
 var css1 = `/* 
- * 面试官你好，我是XXX
+ * 面试官你好，我是范帅兵
+ *安徽建筑大学大四学生，应聘前端实习生
  * 只用文字作做我介绍太单调了
  * 我就用代码来介绍吧
  * 首先准备一些样式
@@ -72,29 +73,51 @@ var css2 = `
 var md = `
 # 自我介绍
 
-我叫 xxx
+我叫范帅兵
 目前就读于安徽建筑大学,2019毕业 
 自学前端半年
-希望应聘前端开发岗位
+希望应聘前端开发实习岗位
 
 # 技能介绍
 
-熟悉 HTML JavaScript CSS  
+## HTML5 & CSS3
+
+标签语义化：能根据 HTML5 标准编写具有语义化的文档结构。
+CSS居中与布局：能快速对元素进行居中处理，使用float、flex、grid等方案进行页面布局。
+CSS动画：能使用keyframes、transition、transform等实现常见动画效果。
+了解Bootstrap的基本使用规则。 
+
+## JavaScript
+
+理解异步、this、作用域链、闭包、原型链、面向对象等。
+了解 ES6 的部分常用语法,能在项目中普遍使用let、块级作用域、箭头函数、Promise 等语法。
+
+## jQuery
+熟悉 jQuery 的常用 API，能使用 jQuery 技术栈进行网站开发。
+
+## HTTP与浏览器
+
+了解 HTTP 基础知识，了解常见状态码含义，能够根据请求查看响应。
+
+理解浏览器运行机制，理解页面加载的整个过程。
+
 
 # 项目介绍
 
-- [简历](https://fatfanfan.github.io/resume/index.html)
+- [在线简历](https://fatfanfan.github.io/resume/index.html)
 
-- [皮卡丘](https://fatfanfan.github.io/apple/index.html)
+- [导航](https://fatfanfan.github.io/keyboard/index.html)
 
-- [导航](https://fatfanfan.github.io/KBD/1.html)
+- [简易画板](https://fatfanfan.github.io/canvas/1.html)
+
+
 
 
 # 联系方式
 
-- QQ  1737574999
-- Email 1737574999@qq.com
-- 手机 xxxxxxx
+- Email fatfan1020@gmail.com
+
+- 手机 17756979714
 
 # 博客地址
 
