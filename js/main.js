@@ -83,7 +83,7 @@ var md = `
 ## HTML5 & CSS3
 
 标签语义化：能根据 HTML5 标准编写具有语义化的文档结构。
-CSS居中与布局：能快速对元素进行居中处理，使用float、flex、grid等方案进行页面布局。
+CSS居中与布局：能快速对元素进行居中处理，使用float、flex等方案进行页面布局。
 CSS动画：能使用keyframes、transition、transform等实现常见动画效果。
 了解Bootstrap的基本使用规则。 
 
@@ -166,7 +166,7 @@ function writeCss(prefix, code, fn){
 			window.clearInterval(id)
 			fn && fn.call()
 		}
-	}, 50)
+	}, 30)
 }
 
 function createPaper(fn){
