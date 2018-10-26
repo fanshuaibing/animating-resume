@@ -70,7 +70,7 @@ var css2 = `
  */
 `
 
-var md = `
+var resume = `
 # 自我介绍
 
 我叫范帅兵
@@ -117,7 +117,7 @@ CSS动画：能使用keyframes、transition、transform等实现常见动画效�
 
 - Email fatfan1020@gmail.com
 
-- 手机 17756979714
+- 手机 1775697xxxx
 
 # 博客地址
 
@@ -128,7 +128,7 @@ CSS动画：能使用keyframes、transition、transform等实现常见动画效�
 
 
 `
-let css3 = `
+let resume2 = `
 /*
  * 这就是我的会动的简历
  * 谢谢观看
@@ -138,10 +138,10 @@ let css3 = `
 //主要代码
 writeCss('', css1, ()=>{ // writeCss call the function
   createPaper(() => {
-    writeMarkdown(md, ()=> {
+    writeMarkdown(resume, ()=> {
       writeCss(css1, css2, ()=>{
         convertMarkdownToHtml(()=>{
-          writeCss(css1 + css2, css3, ()=> {
+          writeCss(css1 + css2, resume2, ()=> {
             console.log('完成')
           })
         })
